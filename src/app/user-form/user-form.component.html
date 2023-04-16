@@ -1,0 +1,12 @@
+<p>user-form works!</p>
+
+<input placeholder="Enter username" [(ngModel)]="name" />
+<!-- <h3 [style.color]="isHighlight ? 'red': 'black'" [style.fontSize]="isHighlight ? '40px': '20px'">Your name is: {{ name
+    }}</h3> -->
+<h3 [ngStyle]="name.length % 2 === 0 ? evenStyle : oddStyle">You name is: {{name}}</h3>
+<div [class]="isHighlight ? 'circle' : 'square'"></div>
+<div [class.circle]="!isHighlight" [class.square]="isHighlight"></div>
+<br />
+<div [ngClass]="currentClass"></div>
+<!-- <div [class]=""></div> -->
+<!-- <code>{{txtUsername.value | json}}</code> -->

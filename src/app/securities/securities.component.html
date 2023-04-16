@@ -1,0 +1,4 @@
+<h3>{{code === '' ? 'Nhap ma de check khoi luong' : ('Ma '+ code + ' co tay long dang mua voi khoi luong la: '+ vol)}}
+</h3>
+<input placeholder="Nhap ma chung khoan" [(ngModel)]="txtCode" />
+<button (click)="getVolume()">Get Volume</button>

@@ -1,0 +1,7 @@
+<p *ngIf="isShow">Hello Tuan</p>
+
+<ul *ngFor="let item of arrSub">
+    <li>{{'Subject: ' + item }}</li>
+</ul>
+
+<button (click)="isShow = !isShow">Click Me< /button>

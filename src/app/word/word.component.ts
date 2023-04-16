@@ -1,0 +1,14 @@
+import { Component } from '@angular/core';
+
+@Component({
+    templateUrl: './word.component.html',
+    selector: 'app-word',
+    styleUrls: [`./word.component.css`]
+})
+
+export class WordComponent {
+    en = 'Hello';
+    vn = 'Xin Chao';
+    imageUrl = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAAtCAMAAACj8gQpAAAAmVBMVEX////gIykAAADeAADeAA798/PeAAr//Pzx8fFkYmLeAAb++PjfERrgHCPd3d2dnJz87e3kSk7nYmT3zs7xqqvrhojtkpT42NnmXF/64ODsjY+KiYnzubnvnZ71xcb0v8DkUlXjP0PhMTboa25KSEiysbHm5uYfGxx7eno4NTXHxsYSCw3qfH7ysbLocXM/PT1bWFlxb3AvLC3tsC4BAAADVklEQVRYhe2X2XajMAyGhcWSgiEEQtjC3uwk7eT9H25kk0DmzLSZG3fmojonQdgcPix+JAvg2/5bK+LJP5dfhl2hPoKXiF8FjlDTzBusIB/PX4LtbY0MK+GvUPrLL8BedE0armnl9s0vlGODG1assjdHf6WWatX8jnL1skBtBEcqsc7iARsLMY9gs1eHNZoJy1Mxsp7AeqcK67fuiHXTYax6AAeKsNqE1fz7aDiBea0EiyNWc61pPNYncKMC/CAi/iCienocDFVw4fyg3sttzGl+VbgSq35Tr9FO2LvUFFhpT+AEflX4JDUFFuojiNdW+qDwViWW1MtHFF6m7MUbQykWIHXdMU2MYeYLRzF2TB9SWLfEyRfDlKE01hJ8KwOyUEiJkYVVVapct9PysexRYbwXBD8tQ0PpXstqsukkuaeQ1FgXoHaPZ/3Jt8rQD9Xljo/NCf8J9tu+7SOzfMMwfEccfJHpnTC2QLqGL5NgHMoCYMRDSjTkRQZlqRnZcIvhKP+FL8fvkx9ZjGgjRqH4r6nr0hERapGdMnFetnQegtHRYUHfjIGiWxHdwpaRvXl0i1fGNgAeY0eADXuHOfshZjefctOgdtvuHKOWRUtq9vS+sKk1oS5kRfUnRj0pmhI0e7Hs0EwhtXkHKbod3fl63LM3IOdl9y64O+YR94W4eziw/FmkK3shNqeN5ViWa1KH6UOiR46TEbfTRU70lyjqT097rMrUOBRUGgh3gCOtjDDHF7Yl7nV3vXHznJb9zNYD10XMfOQyCSYuR+RuAO2wYexk3xljSwFZYVz3DRJ3x9hhC7Q0os2J+0YLHbjXE7M+ZT5w2yyqfLSlehKeFEXAA2hM2WH3tuj+Klr1BeP2olcBpjN2OG5OO+K9ekd2FeulN72X3JcrPcjfcknXsNAD3yim97vCNnbKMEQe0l6Dmt4FOpFOPyyJC9aBbfMT6evEPMGd7U4nGedBZE+42AguRTahPQ2iiZBgJvScULFF1KnRzxBbGwNwdBNKur7AYsZOItCzEzt6Xs5yirsU9aDnOWPeE26c0ctLoywTR2OVBAUUPX0s61709OcgiSj24aXuaMyPVuDQZBydZ/s8z+eWtxfC3e7zmXQ2+RyOe/qEaO5ppL9Nhf0E89c8iGG5SXsAAAAASUVORK5CYII=';
+    isDisplay = true;
+}
