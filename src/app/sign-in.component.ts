@@ -1,5 +1,4 @@
 import { Component } from "@angular/core";
-import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { SignInService } from "./sign-in.service";
 
 @Component({

@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WordComponent } from './word/word.component';
 import { UserFormComponent } from './user-form/user-form.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { StockFormComponent } from './stock-form/stock-form.component';
 import { StructComponent } from './struct/struct.component';
 import { WordsComponent } from './words/words.component';
@@ -21,8 +21,9 @@ import { RoundPipe } from './round.pipe';
 import { IpComponent } from './ip.component';
 import { IpService } from './ip.service';
 import { WeatherComponent } from './weather/weather.component';
-import { SignInComponent } from './sign-in.Component';
+import { SignInComponent } from './sign-in.component';
 import { SecuritiesComponent } from './securities/securities.component';
+import { SignUpComponent } from './sign-up.component';
 
 @NgModule({
   declarations: [
@@ -42,13 +43,15 @@ import { SecuritiesComponent } from './securities/securities.component';
     IpComponent,
     WeatherComponent,
     SignInComponent,
-    SecuritiesComponent
+    SecuritiesComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [IpService],
   bootstrap: [AppComponent]
