@@ -21,16 +21,6 @@ export class SecuritiesService {
             this.apps = data as Applications[];
             console.log(this.apps[0].sellForeignQuantity);
         });
-
-        // http.get(url).subscribe(result => {
-        //     this.apps = result.json() as Applications[];
-        // }, error => console.error(error));
-
-
-        // return this.httpClient.get(url, requestOptions)
-        //     .toPromise()
-        //     .then(res => res)
-        //     .then((resJson: any) => resJson.buyForeignQuantity);
     }
 
 }

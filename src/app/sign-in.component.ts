@@ -1,4 +1,6 @@
 import { Component } from "@angular/core";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { SignInService } from "./sign-in.service";
 
 @Component({
     selector: 'app-sign-in',
@@ -16,12 +18,14 @@ import { Component } from "@angular/core";
                 </div>
                 <br/><br/>
                 <button [disabled]="FormSubmit.invalid">Click me</button>
-                <p>{{ txtEmail.errors | json }}</p>
-                <p>{{ txtPassword.errors | json }}</p>
-                <p>{{ FormSubmit.value | json }}</p>
-
             </form>
+            <br>
+            <!-- <button (click)="postToExpress()">POST</button> -->
+            <p>{{ txtEmail.errors | json }}</p>
+            <p>{{ txtPassword.errors | json }}</p>
+            <p>{{ FormSubmit.value | json }}</p>
             `,
+    providers: [SignInService]
 })
 
 export class SignInComponent {
@@ -29,9 +33,24 @@ export class SignInComponent {
     password = '';
     result = '';
 
+    constructor(private signinService: SignInService) {
+
+    }
+
     onSubmit(FormSubmit: any) {
         // console.log(FormSubmit.controls.email.status);
-
-        console.log(FormSubmit);
+        // console.log('Thanh Cong');
+        this.signinService.sendPost(FormSubmit.value).catch(err => err).then(res => res);
     }
+
+    // postToExpress() {
+    //     const url = 'http://localhost:3000/signin';
+
+    //     return this.http.post(url, { name: 'tuan huyen' }, { responseType: 'text' })
+    //         .toPromise()
+    //         .then(res => res)
+    //         .then(restText => console.log(restText));
+    // }
+
+
 }

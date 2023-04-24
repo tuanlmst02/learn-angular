@@ -18,6 +18,7 @@
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
+    "body-parser": "^1.20.2",
     "bootstrap": "^5.2.3",
     "guid-typescript": "^1.0.9",
     "jquery": "^3.6.4",
